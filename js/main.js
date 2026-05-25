@@ -108,27 +108,36 @@ function initImageGallery() {
 
   galleries.forEach(gallery => {
     const mainImg = gallery.querySelector('.gallery-main img');
-    const thumbs = gallery.querySelectorAll('.gallery-thumb');
+    const thumbs = Array.from(gallery.querySelectorAll('.gallery-thumb'));
+    const prevBtn = gallery.querySelector('.gallery-prev');
+    const nextBtn = gallery.querySelector('.gallery-next');
     if (!mainImg || !thumbs.length) return;
 
-    thumbs.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        const src = thumb.dataset.src;
-        const alt = thumb.dataset.alt || '';
+    let currentIndex = 0;
 
-        // Fade transition
-        mainImg.style.opacity = '0';
-        setTimeout(() => {
-          mainImg.src = src;
-          mainImg.alt = alt;
-          mainImg.style.opacity = '1';
-        }, 200);
+    function goToIndex(idx) {
+      currentIndex = (idx + thumbs.length) % thumbs.length;
+      const thumb = thumbs[currentIndex];
+      const src = thumb.dataset.src;
+      const alt = thumb.dataset.alt || '';
 
-        // Update active state
-        thumbs.forEach(t => t.classList.remove('active'));
-        thumb.classList.add('active');
-      });
+      mainImg.style.opacity = '0';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.alt = alt;
+        mainImg.style.opacity = '1';
+      }, 200);
+
+      thumbs.forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    thumbs.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => goToIndex(idx));
     });
+
+    if (prevBtn) prevBtn.addEventListener('click', () => goToIndex(currentIndex - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => goToIndex(currentIndex + 1));
   });
 }
 

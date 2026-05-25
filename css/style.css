@@ -133,6 +133,10 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-card);
   overflow: hidden;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -142,7 +146,7 @@ h1, h2, h3, h4 {
 
 .product-card .card-image {
   overflow: hidden;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1;
 }
 
 .product-card .card-image img {
