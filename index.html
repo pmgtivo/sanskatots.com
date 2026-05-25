@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SanskaTots™ — Premium Montessori Learning Books for Kids | Made in India</title>
+  <meta name="description" content="India's premium Montessori learning books for children aged 1–6. Reusable Write & Wipe books with Velcro activities. 300 GSM laminated. Screen-free. Made in India." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sanskatots.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SanskaTots™ — Premium Montessori Learning Books for Kids" />
+  <meta property="og:description" content="India's premium Montessori learning books. Reusable, screen-free, made in India. Available on Amazon." />
+  <meta property="og:image" content="https://www.sanskatots.com/images/montessori-busy-book/1.png" />
+  <meta property="og:url" content="https://www.sanskatots.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SanskaTots™" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
+            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
+            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
+            cream: '#FFF8EC',
+            'off-white': '#FAF6F0',
+            charcoal: '#2A2A2A',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            ui: ['Poppins', 'Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body">
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[200] focus:bg-saffron focus:text-maroon focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="nav-sticky fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="images/SanskaTots-logo.png" alt="SanskaTots™ — Wisdom Begins Early" class="h-12 w-12 rounded-full" width="48" height="48" />
+        <span class="font-heading text-xl font-bold text-maroon hidden sm:inline">SanskaTots™</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#books" class="font-ui font-medium text-charcoal hover:text-saffron-dark transition-colors">Books</a>
+        <a href="about.html" class="font-ui font-medium text-charcoal hover:text-saffron-dark transition-colors">About</a>
+        <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm" data-amazon-cta data-product-name="store" data-placement="header-nav">
+          Buy on Amazon →
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="nav-hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open navigation menu">
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay flex flex-col items-center justify-center gap-8">
+    <button id="mobile-nav-close" class="absolute top-6 right-6 text-cream text-3xl" aria-label="Close navigation menu">✕</button>
+    <a href="index.html" class="flex flex-col items-center gap-3">
+      <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
+      <span class="text-cream font-heading text-2xl font-bold">SanskaTots™</span>
+    </a>
+    <a href="#books" class="text-cream font-ui text-xl">Books</a>
+    <a href="about.html" class="text-cream font-ui text-xl">About</a>
+    <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-primary text-lg mt-4" data-amazon-cta data-product-name="store" data-placement="mobile-nav">
+      Buy on Amazon →
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-pattern min-h-screen flex items-center pt-20 pb-16 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="lg:col-span-3 space-y-6">
+          <!-- Pre-headline pill -->
+          <div class="pill-badge">
+            🇮🇳 Made in India · Screen-Free · Montessori
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+            Where India's Youngest<br>
+            <span class="relative inline-block pb-8">
+              Learners Begin Their Story.
+              <span class="absolute bottom-1 left-0 w-full h-2 bg-saffron/30 -z-10 rounded-full"></span>
+            </span>
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="text-lg text-charcoal/80 max-w-xl leading-relaxed">
+            Premium Montessori books for children aged 1–6.<br>
+            Reusable. Screen-free. Proudly Indian.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#books" class="btn-primary">Explore Books</a>
+            <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-amazon-cta data-product-name="store" data-placement="hero-cta">
+              Buy on Amazon →
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap items-center gap-3 text-sm text-charcoal/70 pt-2">
+            <span>✓ 300 GSM Premium Quality</span>
+            <span class="text-charcoal/30">·</span>
+            <span>✓ Free Pen & Duster</span>
+            <span class="text-charcoal/30">·</span>
+            <span>✓ Ships Across India</span>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="lg:col-span-2 flex justify-center">
+          <div class="relative">
+            <img 
+              src="images/montessori-busy-book/1.png" 
+              alt="SanskaTots Montessori Busy Book with pen and duster — 100+ Velcro activities for toddlers" 
+              class="w-full max-w-md rounded-3xl shadow-xl"
+              loading="eager"
+              fetchpriority="high"
+              width="600"
+              height="600"
+            />
+            <span class="absolute -top-3 -right-3 bg-saffron text-maroon font-ui font-bold text-xs px-3 py-1.5 rounded-full shadow-md">NEW</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Strip -->
+    <section class="brand-strip py-16 px-4 md:px-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <p class="font-heading italic text-xl md:text-2xl text-cream/90 leading-relaxed">
+          "In a world of screens, we put a book in your child's hand."
+        </p>
+        <p class="mt-4 text-cream/60 font-ui text-sm tracking-wide uppercase">
+          — SanskaTots™, Designed in India by Indian educators.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feature Pillars -->
+    <section class="py-20 px-4 md:px-8 bg-cream" data-animate>
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-4">Why Parents Choose SanskaTots™</h2>
+        <p class="text-center text-charcoal/70 mb-12 max-w-2xl mx-auto">Every detail is designed for your child's growth — and your peace of mind.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="feature-card" data-animate data-animate-delay="0">
+            <div class="text-3xl mb-4">♾️</div>
+            <h3 class="font-heading text-xl font-bold mb-2">Infinitely Reusable</h3>
+            <p class="text-charcoal/70 text-sm leading-relaxed">Write, wipe, and repeat. 300 GSM laminated pages last for years, not days.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="feature-card" data-animate data-animate-delay="100">
+            <div class="text-3xl mb-4">🧩</div>
+            <h3 class="font-heading text-xl font-bold mb-2">Velcro Montessori System</h3>
+            <p class="text-charcoal/70 text-sm leading-relaxed">Interactive Velcro activities on every concept — real hands-on learning, not passive tracing.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="feature-card" data-animate data-animate-delay="200">
+            <div class="text-3xl mb-4">📵</div>
+            <h3 class="font-heading text-xl font-bold mb-2">100% Screen-Free</h3>
+            <p class="text-charcoal/70 text-sm leading-relaxed">No app. No Wi-Fi. No battery. Pure tactile learning that pediatricians recommend.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="feature-card" data-animate data-animate-delay="300">
+            <div class="text-3xl mb-4">🇮🇳</div>
+            <h3 class="font-heading text-xl font-bold mb-2">Proudly Made in India</h3>
+            <p class="text-charcoal/70 text-sm leading-relaxed">Designed by Indian educators, for Indian children and Indian homes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="books" class="py-20 px-4 md:px-8 bg-off-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-4" data-animate>Our Books</h2>
+        <p class="text-center text-charcoal/70 mb-12" data-animate>Premium learning. Infinite practice. All available on Amazon India.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+          <!-- Product Card: Montessori Busy Book -->
+          <div class="product-card" data-animate data-animate-delay="0">
+            <div class="relative">
+              <span class="absolute top-4 left-4 badge-busy-book font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">BUSY BOOK</span>
+              <div class="card-image">
+                <img 
+                  src="images/montessori-busy-book/1.png" 
+                  alt="SanskaTots Montessori Busy Book — Velcro activities, 11 learning concepts, reusable"
+                  loading="lazy"
+                  width="600"
+                  height="450"
+                />
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="text-saffron">★★★★★</span>
+                <span class="text-xs text-charcoal/50 font-ui">Ages 1+</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold">SanskaTots™ Montessori Busy Book</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag-chip">Velcro Activities</span>
+                <span class="tag-chip">11 Topics</span>
+                <span class="tag-chip">300 GSM</span>
+                <span class="tag-chip">Free Pen + Duster</span>
+              </div>
+              <div class="flex items-baseline gap-2 pt-1">
+                <span class="font-ui font-bold text-2xl text-maroon">₹699</span>
+                <span class="text-sm text-charcoal/50 line-through">₹999</span>
+              </div>
+              <a 
+                href="products/montessori-busy-book.html" 
+                class="block text-center btn-primary w-full mt-2 justify-center"
+              >
+                View Details →
+              </a>
+            </div>
+          </div>
+
+          <!-- Product Card: Pencil Control Tracing Book -->
+          <div class="product-card" data-animate data-animate-delay="150">
+            <div class="relative">
+              <span class="absolute top-4 left-4 badge-tracing-book font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">TRACING BOOK</span>
+              <div class="card-image">
+                <img 
+                  src="images/pencil-control-tracing-book/1.png" 
+                  alt="SanskaTots Pencil Control Tracing Book — Write Wipe Repeat, reusable with pen and duster"
+                  loading="lazy"
+                  width="600"
+                  height="450"
+                />
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="text-saffron">★★★★★</span>
+                <span class="text-xs text-charcoal/50 font-ui">Ages 2+</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold">SanskaTots™ Pencil Control Tracing Book</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tag-chip">Write & Wipe</span>
+                <span class="tag-chip">5 Concepts</span>
+                <span class="tag-chip">300 GSM</span>
+                <span class="tag-chip">Free Pen + Duster</span>
+              </div>
+              <div class="flex items-baseline gap-2 pt-1">
+                <span class="font-ui font-bold text-2xl text-maroon">₹499</span>
+                <span class="text-sm text-charcoal/50 line-through">₹699</span>
+              </div>
+              <a 
+                href="products/pencil-control-tracing-book.html" 
+                class="block text-center btn-primary w-full mt-2 justify-center"
+              >
+                View Details →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted by Indian Parents — Core Concepts -->
+    <section class="py-20 px-4 md:px-8 bg-cream" data-animate>
+      <div class="max-w-6xl mx-auto">
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-center mb-12">Trusted by Indian Parents</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Screen Free Learning -->
+          <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow" data-animate data-animate-delay="0">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-red-50 flex items-center justify-center">
+              <svg class="w-10 h-10 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+                <line x1="2" y1="3" x2="22" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="font-ui font-bold text-base text-maroon mb-2">Screen-Free Learning</h3>
+            <p class="text-sm text-charcoal/60 leading-relaxed">No apps, no tablets. Real books for real hands-on engagement.</p>
+          </div>
+
+          <!-- School Readiness -->
+          <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow" data-animate data-animate-delay="100">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-blue-50 flex items-center justify-center">
+              <svg class="w-10 h-10 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+              </svg>
+            </div>
+            <h3 class="font-ui font-bold text-base text-maroon mb-2">School Readiness</h3>
+            <p class="text-sm text-charcoal/60 leading-relaxed">Complete pre-school curriculum — everything before Class 1.</p>
+          </div>
+
+          <!-- Write-Wipe-Repeat -->
+          <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow" data-animate data-animate-delay="200">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-green-50 flex items-center justify-center">
+              <svg class="w-10 h-10 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"/>
+                <polyline points="1 20 1 14 7 14"/>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+              </svg>
+            </div>
+            <h3 class="font-ui font-bold text-base text-maroon mb-2">Write-Wipe-Repeat</h3>
+            <p class="text-sm text-charcoal/60 leading-relaxed">300 GSM laminated pages. Infinite practice. Zero waste.</p>
+          </div>
+
+          <!-- Velcro Activities -->
+          <div class="bg-white rounded-2xl p-6 text-center shadow-md hover:shadow-lg transition-shadow" data-animate data-animate-delay="300">
+            <div class="w-20 h-20 mx-auto mb-5 rounded-full bg-purple-50 flex items-center justify-center">
+              <svg class="w-10 h-10 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                <rect x="14" y="14" width="7" height="7" rx="1"/>
+                <path d="M10 6h4M6 10v4M17 10v4M10 17h4"/>
+              </svg>
+            </div>
+            <h3 class="font-ui font-bold text-base text-maroon mb-2">Velcro Activities</h3>
+            <p class="text-sm text-charcoal/60 leading-relaxed">Reusable Velcro pieces — hands-on Montessori learning that sticks.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner py-16 px-4 md:px-8 text-center">
+      <div class="max-w-3xl mx-auto space-y-6">
+        <h2 class="font-heading text-2xl md:text-3xl font-bold text-maroon">Ready to Start Your Child's Learning Journey?</h2>
+        <p class="text-maroon/80">All SanskaTots™ books are available exclusively on Amazon India.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-primary" data-amazon-cta data-product-name="store" data-placement="bottom-banner">
+            Shop on Amazon →
+          </a>
+          <a href="#books" class="btn-secondary border-maroon text-maroon hover:bg-maroon hover:text-cream">View All Books</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-maroon text-cream py-16 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Brand -->
+      <div>
+        <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
+        <h3 class="font-heading text-2xl font-bold text-cream mb-2">SanskaTots™</h3>
+        <p class="text-cream/60 text-sm leading-relaxed">Screen-free school readiness, the Indian way.</p>
+        <div class="mt-3 pill-badge bg-transparent border-cream/30 text-cream/80 text-xs">🇮🇳 Made in India</div>
+      </div>
+      <!-- Books -->
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Our Books</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="products/montessori-busy-book.html" class="hover:text-saffron transition-colors">Montessori Busy Book</a></li>
+          <li><a href="products/pencil-control-tracing-book.html" class="hover:text-saffron transition-colors">Pencil Control Tracing Book</a></li>
+        </ul>
+      </div>
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="index.html" class="hover:text-saffron transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-saffron transition-colors">About</a></li>
+          <li><a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="hover:text-saffron transition-colors">Amazon Store</a></li>
+        </ul>
+      </div>
+      <!-- Connect -->
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Connect</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="https://www.instagram.com/sanskatots" target="_blank" rel="noopener noreferrer" class="hover:text-saffron transition-colors">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@sanskatots" target="_blank" rel="noopener noreferrer" class="hover:text-saffron transition-colors">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-cream/10 text-center text-xs text-cream/40">
+      © 2026 Deethya Enterprises. All Rights Reserved. SanskaTots™ is a trademark of Deethya Enterprises.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

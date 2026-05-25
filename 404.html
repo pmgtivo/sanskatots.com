@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — SanskaTots™</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
+            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
+            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
+            cream: '#FFF8EC',
+            charcoal: '#2A2A2A',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            ui: ['Poppins', 'Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body bg-cream min-h-screen flex flex-col">
+
+  <!-- Nav -->
+  <nav class="px-4 md:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="font-heading text-2xl font-bold text-maroon">SanskaTots</span>
+        <span class="text-saffron text-sm font-ui font-semibold">™</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- 404 Content -->
+  <main class="flex-1 flex items-center justify-center px-4 py-20">
+    <div class="text-center max-w-lg space-y-6">
+      <div class="text-8xl mb-4">📖</div>
+      <h1 class="font-heading text-4xl md:text-5xl font-bold text-maroon">Oops!</h1>
+      <p class="text-xl text-charcoal/70">This page seems to have wandered off to play...</p>
+      <p class="text-charcoal/50">The page you're looking for doesn't exist or has been moved.</p>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <a href="index.html" class="btn-primary">Go to Home</a>
+        <a href="index.html#books" class="btn-secondary">Explore Our Books</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-maroon text-cream py-8 px-4 text-center">
+    <p class="text-xs text-cream/40">© 2026 Deethya Enterprises. SanskaTots™</p>
+  </footer>
+
+</body>
+</html>
