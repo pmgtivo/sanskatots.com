@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Books — SanskaTots™ | Premium Montessori Learning Books for Kids</title>
+  <meta name="description" content="Browse all SanskaTots™ books. Filter by age, topic, and find the perfect Montessori learning book for your child. Ages 1–6. Made in India." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sanskatots.com/books.html" />
+  <link rel="icon" type="image/png" href="/images/SanskaTots-logo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="All Books — SanskaTots™" />
+  <meta property="og:description" content="Browse all SanskaTots™ Montessori learning books. Filter by age, topic, and find the perfect book for your child." />
+  <meta property="og:image" content="https://www.sanskatots.com/images/montessori-busy-book/1.png" />
+  <meta property="og:url" content="https://www.sanskatots.com/books.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SanskaTots™" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
+            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
+            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
+            cream: '#FFF8EC',
+            'off-white': '#FAF6F0',
+            charcoal: '#2A2A2A',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+            ui: ['Poppins', 'Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body bg-cream">
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[200] focus:bg-saffron focus:text-maroon focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav class="nav-sticky fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
+        <span class="font-heading text-xl font-bold text-maroon hidden sm:inline">SanskaTots™</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="books.html" class="font-ui font-medium text-saffron-dark transition-colors">Books</a>
+        <a href="about.html" class="font-ui font-medium text-charcoal hover:text-saffron-dark transition-colors">About</a>
+        <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm" data-amazon-cta data-product-name="store" data-placement="header-nav">
+          Buy on Amazon →
+        </a>
+      </div>
+      <button id="nav-hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open navigation menu">
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+        <span class="block w-6 h-0.5 bg-maroon rounded"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay flex flex-col items-center justify-center gap-8">
+    <button id="mobile-nav-close" class="absolute top-6 right-6 text-cream text-3xl" aria-label="Close navigation">✕</button>
+    <a href="index.html" class="flex flex-col items-center gap-3">
+      <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
+      <span class="text-cream font-heading text-2xl font-bold">SanskaTots™</span>
+    </a>
+    <a href="books.html" class="text-cream font-ui text-xl">Books</a>
+    <a href="about.html" class="text-cream font-ui text-xl">About</a>
+    <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="btn-primary text-lg mt-4" data-amazon-cta data-product-name="store" data-placement="mobile-nav">
+      Buy on Amazon →
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content" class="pt-24 pb-16 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Page Header -->
+      <div class="text-center mb-10">
+        <h1 class="font-heading text-3xl md:text-4xl font-bold mb-3">Our Books</h1>
+        <p class="text-charcoal/70 max-w-xl mx-auto">Find the perfect learning book for your child. All books are reusable, screen-free, and made in India.</p>
+      </div>
+
+      <!-- Search & Filters Bar -->
+      <div class="bg-white rounded-2xl shadow-md p-4 md:p-6 mb-8 sticky top-20 z-40">
+        <div class="flex flex-col lg:flex-row gap-4 items-stretch lg:items-center">
+
+          <!-- Search -->
+          <div class="flex-1 relative">
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-charcoal/40">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search books..."
+              class="w-full pl-12 pr-4 py-3 rounded-xl border border-charcoal/10 focus:border-saffron focus:ring-2 focus:ring-saffron/20 outline-none font-ui text-sm transition-all"
+            />
+          </div>
+
+          <!-- Filters row -->
+          <div class="flex flex-wrap gap-3 items-center">
+
+            <!-- Age Filter -->
+            <div class="relative">
+              <label for="filter-age" class="sr-only">Filter by Age</label>
+              <select
+                id="filter-age"
+                class="appearance-none bg-off-white border border-charcoal/10 rounded-xl pl-4 pr-10 py-3 font-ui text-sm cursor-pointer focus:border-saffron focus:ring-2 focus:ring-saffron/20 outline-none transition-all"
+              >
+                <option value="">All Ages</option>
+                <option value="1">Age 1+</option>
+                <option value="2">Age 2+</option>
+              </select>
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+
+            <!-- Topic Filter -->
+            <div class="relative">
+              <label for="filter-topic" class="sr-only">Filter by Topic</label>
+              <select
+                id="filter-topic"
+                class="appearance-none bg-off-white border border-charcoal/10 rounded-xl pl-4 pr-10 py-3 font-ui text-sm cursor-pointer focus:border-saffron focus:ring-2 focus:ring-saffron/20 outline-none transition-all"
+              >
+                <option value="">All Topics</option>
+                <option value="montessori">Montessori</option>
+                <option value="animals">Animals</option>
+                <option value="tracing">Tracing & Writing</option>
+                <option value="spiritual">Spiritual</option>
+              </select>
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+
+            <!-- Sort -->
+            <div class="relative">
+              <label for="sort-by" class="sr-only">Sort by</label>
+              <select
+                id="sort-by"
+                class="appearance-none bg-off-white border border-charcoal/10 rounded-xl pl-4 pr-10 py-3 font-ui text-sm cursor-pointer focus:border-saffron focus:ring-2 focus:ring-saffron/20 outline-none transition-all"
+              >
+                <option value="default">Sort: Featured</option>
+                <option value="age-asc">Age: Low to High</option>
+                <option value="age-desc">Age: High to Low</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+              <span class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/40">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </div>
+
+            <!-- Clear Filters -->
+            <button
+              id="clear-filters"
+              class="hidden items-center gap-1.5 text-maroon font-ui font-medium text-sm hover:text-maroon-light transition-colors"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <!-- Active filters display -->
+        <div id="active-filters" class="hidden flex-wrap gap-2 mt-4 pt-4 border-t border-charcoal/5"></div>
+      </div>
+
+      <!-- Results count -->
+      <div class="flex items-center justify-between mb-6">
+        <p id="results-count" class="font-ui text-sm text-charcoal/60">Showing <span class="font-semibold text-charcoal">5</span> books</p>
+      </div>
+
+      <!-- Books Grid -->
+      <div id="books-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Book cards will be rendered by JS -->
+
+      </div>
+
+      <!-- No Results -->
+      <div id="no-results" class="hidden text-center py-16">
+        <div class="text-5xl mb-4">📚</div>
+        <h3 class="font-heading text-xl font-bold mb-2">No books found</h3>
+        <p class="text-charcoal/60 mb-6">Try adjusting your search or filters.</p>
+        <button id="reset-all" class="btn-primary">Show All Books</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-maroon text-cream py-16 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
+        <h3 class="font-heading text-2xl font-bold text-cream mb-2">SanskaTots™</h3>
+        <p class="text-cream/60 text-sm leading-relaxed">Screen-free school readiness, the Indian way.</p>
+        <div class="mt-3 pill-badge bg-transparent border-cream/30 text-cream/80 text-xs">🇮🇳 Made in India</div>
+      </div>
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Our Books</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="products/all-in-one-busy-book.html" class="hover:text-saffron transition-colors">All In One Busy Book</a></li>
+          <li><a href="products/montessori-busy-book.html" class="hover:text-saffron transition-colors">Montessori Busy Book</a></li>
+          <li><a href="products/pencil-control-tracing-book.html" class="hover:text-saffron transition-colors">Pencil Control Tracing Book</a></li>
+          <li><a href="products/animals-busy-book.html" class="hover:text-saffron transition-colors">Animals Busy Book</a></li>
+          <li><a href="products/shlokas-board-book.html" class="hover:text-saffron transition-colors">Shlokas Board Book</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="index.html" class="hover:text-saffron transition-colors">Home</a></li>
+          <li><a href="books.html" class="hover:text-saffron transition-colors">All Books</a></li>
+          <li><a href="about.html" class="hover:text-saffron transition-colors">About</a></li>
+          <li><a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer" class="hover:text-saffron transition-colors">Amazon Store</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-ui font-semibold text-cream/90 mb-4 uppercase text-sm tracking-wider">Connect</h4>
+        <div class="flex flex-col gap-3">
+          <a href="https://www.instagram.com/sanska_tots/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group w-fit">
+            <span class="w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 text-cream/60 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </span>
+            <span class="text-sm text-cream/60 group-hover:text-cream transition-colors">Instagram</span>
+          </a>
+          <a href="https://www.youtube.com/@sanskatots" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group w-fit">
+            <span class="w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 text-cream/60 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </span>
+            <span class="text-sm text-cream/60 group-hover:text-cream transition-colors">YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-cream/10 text-center text-xs text-cream/40">
+      © 2025 Deethya Enterprises. All Rights Reserved. SanskaTots™ is a trademark of Deethya Enterprises.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    // Book data
+    const books = [
+      {
+        id: 'all-in-one-busy-book',
+        name: 'All In One Busy Book',
+        fullName: 'SanskaTots™ All In One Busy Book',
+        badge: 'FLAGSHIP',
+        badgeClass: 'bg-maroon text-cream',
+        image: 'images/all-in-one-busy-book/1.png',
+        price: 599,
+        originalPrice: 999,
+        discount: 40,
+        age: 1,
+        topics: ['montessori'],
+        tags: ['24 Themes', '135+ Velcro', '300 GSM'],
+        url: 'products/all-in-one-busy-book.html',
+        sortOrder: 1
+      },
+      {
+        id: 'montessori-busy-book',
+        name: 'Montessori Busy Book',
+        fullName: 'SanskaTots™ Montessori Busy Book',
+        badge: 'BUSY BOOK',
+        badgeClass: 'badge-busy-book',
+        image: 'images/montessori-busy-book/1.png',
+        price: 449,
+        originalPrice: 699,
+        discount: 36,
+        age: 1,
+        topics: ['montessori'],
+        tags: ['Velcro Activities', '11 Topics', '300 GSM'],
+        url: 'products/montessori-busy-book.html',
+        sortOrder: 2
+      },
+      {
+        id: 'animals-busy-book',
+        name: 'Animals Busy Book',
+        fullName: 'SanskaTots™ Animals Busy Book',
+        badge: 'ANIMALS',
+        badgeClass: 'bg-teal text-white',
+        image: 'images/animals-busy-busy-book/1.png',
+        price: 399,
+        originalPrice: 599,
+        discount: 33,
+        age: 1,
+        topics: ['animals', 'montessori'],
+        tags: ['8 Animal Concepts', 'Write & Wipe', '300 GSM'],
+        url: 'products/animals-busy-book.html',
+        sortOrder: 3
+      },
+      {
+        id: 'pencil-control-tracing-book',
+        name: 'Pencil Control Tracing Book',
+        fullName: 'SanskaTots™ Pencil Control Tracing Book',
+        badge: 'TRACING BOOK',
+        badgeClass: 'badge-tracing-book',
+        image: 'images/pencil-control-tracing-book/1.png',
+        price: 350,
+        originalPrice: 499,
+        discount: 30,
+        age: 2,
+        topics: ['tracing'],
+        tags: ['Write & Wipe', '5 Concepts', '300 GSM'],
+        url: 'products/pencil-control-tracing-book.html',
+        sortOrder: 4
+      },
+      {
+        id: 'shlokas-board-book',
+        name: 'Shlokas Board Book',
+        fullName: 'SanskaTots™ Shlokas Board Book',
+        badge: 'SPIRITUAL',
+        badgeClass: 'bg-saffron text-maroon',
+        image: 'images/shloka-and-mantra-book/1.png',
+        price: 199,
+        originalPrice: 349,
+        discount: 40,
+        age: 2,
+        topics: ['spiritual'],
+        tags: ['15 Gods', 'Bilingual', '3D Art'],
+        url: 'products/shlokas-board-book.html',
+        sortOrder: 5
+      }
+    ];
+
+    // DOM elements
+    const searchInput = document.getElementById('search-input');
+    const filterAge = document.getElementById('filter-age');
+    const filterTopic = document.getElementById('filter-topic');
+    const sortBy = document.getElementById('sort-by');
+    const clearFiltersBtn = document.getElementById('clear-filters');
+    const activeFiltersEl = document.getElementById('active-filters');
+    const booksGrid = document.getElementById('books-grid');
+    const resultsCount = document.getElementById('results-count');
+    const noResults = document.getElementById('no-results');
+    const resetAllBtn = document.getElementById('reset-all');
+
+    // Render book card
+    function renderBookCard(book) {
+      return `
+        <a href="${book.url}" class="product-card group" data-book-id="${book.id}">
+          <div class="relative">
+            <span class="absolute top-4 left-4 ${book.badgeClass} font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">${book.badge}</span>
+            <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+              <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+              <span class="block text-sm">${book.discount}% OFF</span>
+            </span>
+            <div class="card-image">
+              <img 
+                src="${book.image}" 
+                alt="${book.fullName}"
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <div class="flex items-center gap-2">
+              <span class="text-saffron">★★★★★</span>
+              <span class="text-xs text-charcoal/50 font-ui">Ages ${book.age}+</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold">${book.fullName}</h3>
+            <div class="flex flex-wrap gap-1.5">
+              ${book.tags.map(tag => `<span class="tag-chip">${tag}</span>`).join('')}
+            </div>
+            <div class="flex items-baseline gap-2 pt-1">
+              <span class="font-ui font-bold text-2xl text-maroon">₹${book.price}</span>
+              <span class="text-sm text-charcoal/50 line-through">₹${book.originalPrice}</span>
+            </div>
+            <span class="block text-center btn-primary w-full mt-2 justify-center group-hover:bg-saffron-dark">
+              View Details →
+            </span>
+          </div>
+        </a>
+      `;
+    }
+
+    // Filter and render books
+    function filterAndRender() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const ageFilter = filterAge.value;
+      const topicFilter = filterTopic.value;
+      const sortValue = sortBy.value;
+
+      let filteredBooks = books.filter(book => {
+        // Search
+        const matchesSearch = !searchTerm || 
+          book.name.toLowerCase().includes(searchTerm) ||
+          book.fullName.toLowerCase().includes(searchTerm) ||
+          book.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+          book.topics.some(topic => topic.toLowerCase().includes(searchTerm));
+
+        // Age filter
+        const matchesAge = !ageFilter || book.age >= parseInt(ageFilter);
+
+        // Topic filter
+        const matchesTopic = !topicFilter || book.topics.includes(topicFilter);
+
+        return matchesSearch && matchesAge && matchesTopic;
+      });
+
+      // Sort
+      if (sortValue === 'age-asc') {
+        filteredBooks.sort((a, b) => a.age - b.age);
+      } else if (sortValue === 'age-desc') {
+        filteredBooks.sort((a, b) => b.age - a.age);
+      } else if (sortValue === 'price-asc') {
+        filteredBooks.sort((a, b) => a.price - b.price);
+      } else if (sortValue === 'price-desc') {
+        filteredBooks.sort((a, b) => b.price - a.price);
+      } else {
+        // Default: use predefined sort order
+        filteredBooks.sort((a, b) => a.sortOrder - b.sortOrder);
+      }
+
+      // Render
+      if (filteredBooks.length === 0) {
+        booksGrid.innerHTML = '';
+        booksGrid.classList.add('hidden');
+        noResults.classList.remove('hidden');
+      } else {
+        booksGrid.innerHTML = filteredBooks.map(renderBookCard).join('');
+        booksGrid.classList.remove('hidden');
+        noResults.classList.add('hidden');
+      }
+
+      // Update count
+      resultsCount.innerHTML = `Showing <span class="font-semibold text-charcoal">${filteredBooks.length}</span> book${filteredBooks.length !== 1 ? 's' : ''}`;
+
+      // Show/hide clear button
+      const hasFilters = searchTerm || ageFilter || topicFilter || sortValue !== 'default';
+      clearFiltersBtn.classList.toggle('hidden', !hasFilters);
+      clearFiltersBtn.classList.toggle('flex', hasFilters);
+
+      // Update active filters display
+      updateActiveFilters(searchTerm, ageFilter, topicFilter);
+    }
+
+    // Update active filters pills
+    function updateActiveFilters(search, age, topic) {
+      const filters = [];
+
+      if (search) {
+        filters.push({ label: `"${search}"`, type: 'search' });
+      }
+      if (age) {
+        filters.push({ label: `Age ${age}+`, type: 'age' });
+      }
+      if (topic) {
+        const topicLabels = {
+          montessori: 'Montessori',
+          animals: 'Animals',
+          tracing: 'Tracing & Writing',
+          spiritual: 'Spiritual'
+        };
+        filters.push({ label: topicLabels[topic], type: 'topic' });
+      }
+
+      if (filters.length === 0) {
+        activeFiltersEl.classList.add('hidden');
+        activeFiltersEl.classList.remove('flex');
+      } else {
+        activeFiltersEl.classList.remove('hidden');
+        activeFiltersEl.classList.add('flex');
+        activeFiltersEl.innerHTML = filters.map(f => `
+          <button class="inline-flex items-center gap-1.5 bg-saffron-light text-maroon font-ui text-xs font-medium px-3 py-1.5 rounded-full hover:bg-saffron/30 transition-colors" data-filter-type="${f.type}">
+            ${f.label}
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        `).join('');
+
+        // Add click handlers to remove individual filters
+        activeFiltersEl.querySelectorAll('button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const type = btn.dataset.filterType;
+            if (type === 'search') searchInput.value = '';
+            if (type === 'age') filterAge.value = '';
+            if (type === 'topic') filterTopic.value = '';
+            filterAndRender();
+          });
+        });
+      }
+    }
+
+    // Clear all filters
+    function clearAllFilters() {
+      searchInput.value = '';
+      filterAge.value = '';
+      filterTopic.value = '';
+      sortBy.value = 'default';
+      filterAndRender();
+    }
+
+    // Event listeners
+    searchInput.addEventListener('input', filterAndRender);
+    filterAge.addEventListener('change', filterAndRender);
+    filterTopic.addEventListener('change', filterAndRender);
+    sortBy.addEventListener('change', filterAndRender);
+    clearFiltersBtn.addEventListener('click', clearAllFilters);
+    resetAllBtn.addEventListener('click', clearAllFilters);
+
+    // Initial render
+    filterAndRender();
+  </script>
+</body>
+</html>
