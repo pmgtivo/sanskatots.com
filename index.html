@@ -101,16 +101,17 @@
 
     <!-- Hero Section -->
     <section class="hero-pattern min-h-screen flex items-center pt-20 pb-16 px-4 md:px-8">
-      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-        <!-- Text Content -->
-        <div class="lg:col-span-3 space-y-6">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+        <!-- Left: Text Content -->
+        <div class="space-y-6">
           <!-- Pre-headline pill -->
           <div class="pill-badge">
             🇮🇳 Made in India
           </div>
 
           <!-- Hero Headline -->
-          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-5xl font-extrabold leading-tight">
             Where India's Youngest<br>
             <span class="relative inline-block pb-8">
               Learners Begin Their Story.
@@ -120,7 +121,7 @@
 
           <!-- Sub-headline -->
           <p class="text-lg text-charcoal/80 max-w-xl leading-relaxed">
-            Screen-free, Culture-rich, Interactive Learning for Kids.<br>
+            Screen-free, Culture-rich, Interactive Learning for Kids.
           </p>
 
           <!-- CTA Buttons -->
@@ -145,21 +146,119 @@
           </div>
         </div>
 
-        <!-- Hero Image -->
-        <div class="lg:col-span-2 flex justify-center">
-          <div class="relative">
-            <img 
-              src="images/montessori-busy-book/1.png" 
-              alt="SanskaTots Montessori Busy Book with pen and duster — 100+ Velcro activities for toddlers" 
-              class="w-full max-w-md rounded-3xl shadow-xl"
-              loading="eager"
-              fetchpriority="high"
-              width="600"
-              height="600"
-            />
-            <span class="absolute -top-3 -right-3 bg-saffron text-maroon font-ui font-bold text-xs px-3 py-1.5 rounded-full shadow-md">NEW</span>
+        <!-- Right: Launching Offer Panel -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl" style="background: linear-gradient(145deg, #7B1010 0%, #8C2A2A 50%, #B83232 100%);">
+          <!-- Decorative blobs -->
+          <div class="absolute -top-8 -right-8 w-48 h-48 bg-saffron/20 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
+          <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-yellow-300/10 rounded-full blur-2xl pointer-events-none" aria-hidden="true"></div>
+
+          <div class="relative p-6 md:p-8 space-y-5">
+            <!-- Header -->
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="inline-flex items-center gap-2 bg-saffron text-maroon font-ui font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full shadow-md">
+                  🚀 Launching Offers
+                </span>
+                <p class="text-cream/60 text-xs mt-2 font-ui">Introductory prices — lowest ever!</p>
+              </div>
+              <span class="text-4xl">🎉</span>
+            </div>
+
+            <!-- Product list -->
+            <ul class="space-y-3">
+
+              <li>
+                <a href="products/all-in-one-busy-book.html" class="flex items-center justify-between gap-3 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-saffron/40 rounded-xl px-4 py-3 transition-all duration-200 group">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <span class="text-xl flex-shrink-0">📚</span>
+                    <div class="min-w-0">
+                      <div class="font-ui font-semibold text-cream text-sm leading-snug truncate">All In One Busy Book</div>
+                      <div class="flex items-baseline gap-1.5 mt-0.5">
+                        <span class="font-ui font-bold text-saffron text-base">₹599</span>
+                        <span class="text-cream/40 text-xs line-through">₹999</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flex-shrink-0 bg-saffron text-maroon font-heading font-extrabold text-sm px-2.5 py-1 rounded-lg shadow">40% OFF</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="products/montessori-busy-book.html" class="flex items-center justify-between gap-3 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-saffron/40 rounded-xl px-4 py-3 transition-all duration-200 group">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <span class="text-xl flex-shrink-0">🧩</span>
+                    <div class="min-w-0">
+                      <div class="font-ui font-semibold text-cream text-sm leading-snug truncate">Montessori Busy Book</div>
+                      <div class="flex items-baseline gap-1.5 mt-0.5">
+                        <span class="font-ui font-bold text-saffron text-base">₹449</span>
+                        <span class="text-cream/40 text-xs line-through">₹699</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flex-shrink-0 bg-saffron text-maroon font-heading font-extrabold text-sm px-2.5 py-1 rounded-lg shadow">36% OFF</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="products/animals-busy-book.html" class="flex items-center justify-between gap-3 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-saffron/40 rounded-xl px-4 py-3 transition-all duration-200 group">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <span class="text-xl flex-shrink-0">🐾</span>
+                    <div class="min-w-0">
+                      <div class="font-ui font-semibold text-cream text-sm leading-snug truncate">Animals Busy Book</div>
+                      <div class="flex items-baseline gap-1.5 mt-0.5">
+                        <span class="font-ui font-bold text-saffron text-base">₹399</span>
+                        <span class="text-cream/40 text-xs line-through">₹599</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flex-shrink-0 bg-saffron text-maroon font-heading font-extrabold text-sm px-2.5 py-1 rounded-lg shadow">33% OFF</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="products/pencil-control-tracing-book.html" class="flex items-center justify-between gap-3 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-saffron/40 rounded-xl px-4 py-3 transition-all duration-200 group">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <span class="text-xl flex-shrink-0">✏️</span>
+                    <div class="min-w-0">
+                      <div class="font-ui font-semibold text-cream text-sm leading-snug truncate">Pencil Control Tracing Book</div>
+                      <div class="flex items-baseline gap-1.5 mt-0.5">
+                        <span class="font-ui font-bold text-saffron text-base">₹350</span>
+                        <span class="text-cream/40 text-xs line-through">₹499</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flex-shrink-0 bg-saffron text-maroon font-heading font-extrabold text-sm px-2.5 py-1 rounded-lg shadow">30% OFF</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="products/shlokas-board-book.html" class="flex items-center justify-between gap-3 bg-white/10 hover:bg-white/20 border border-white/10 hover:border-saffron/40 rounded-xl px-4 py-3 transition-all duration-200 group">
+                  <div class="flex items-center gap-3 min-w-0">
+                    <span class="text-xl flex-shrink-0">🕉️</span>
+                    <div class="min-w-0">
+                      <div class="font-ui font-semibold text-cream text-sm leading-snug truncate">Shlokas Board Book</div>
+                      <div class="flex items-baseline gap-1.5 mt-0.5">
+                        <span class="font-ui font-bold text-saffron text-base">₹199</span>
+                        <span class="text-cream/40 text-xs line-through">₹349</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="flex-shrink-0 bg-saffron text-maroon font-heading font-extrabold text-sm px-2.5 py-1 rounded-lg shadow">40% OFF</span>
+                </a>
+              </li>
+
+            </ul>
+
+            <!-- CTA -->
+            <a href="https://www.amazon.in/stores/SanskaTots/page/STORE_ID" target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center gap-2 w-full bg-saffron hover:bg-saffron-dark text-maroon font-ui font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-lg transition-all duration-300 hover:scale-[1.02]"
+              data-amazon-cta data-product-name="store" data-placement="hero-launch-panel">
+              🛒 Shop All on Amazon →
+            </a>
+            <p class="text-center text-cream/40 text-xs font-ui">⏳ Introductory prices. Valid while launch offer lasts.</p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -222,7 +321,10 @@
           <a href="products/all-in-one-busy-book.html" class="product-card" data-animate data-animate-delay="0">
             <div class="relative">
               <span class="absolute top-4 left-4 bg-maroon text-cream font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">FLAGSHIP</span>
-              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-3 py-2 rounded-lg z-10 text-sm shadow-lg">40% OFF</span>
+              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+                <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+                <span class="block text-sm">40% OFF</span>
+              </span>
               <div class="card-image">
                 <img 
                   src="images/all-in-one-busy-book/1.png" 
@@ -258,7 +360,10 @@
           <a href="products/montessori-busy-book.html" class="product-card" data-animate data-animate-delay="100">
             <div class="relative">
               <span class="absolute top-4 left-4 badge-busy-book font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">BUSY BOOK</span>
-              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-3 py-2 rounded-lg z-10 text-sm shadow-lg">36% OFF</span>
+              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+                <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+                <span class="block text-sm">36% OFF</span>
+              </span>
               <div class="card-image">
                 <img 
                   src="images/montessori-busy-book/1.png" 
@@ -294,7 +399,10 @@
           <a href="products/pencil-control-tracing-book.html" class="product-card" data-animate data-animate-delay="200">
             <div class="relative">
               <span class="absolute top-4 left-4 badge-tracing-book font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">TRACING BOOK</span>
-              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-3 py-2 rounded-lg z-10 text-sm shadow-lg">30% OFF</span>
+              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+                <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+                <span class="block text-sm">30% OFF</span>
+              </span>
               <div class="card-image">
                 <img 
                   src="images/pencil-control-tracing-book/1.png" 
@@ -330,7 +438,10 @@
           <a href="products/animals-busy-book.html" class="product-card" data-animate data-animate-delay="300">
             <div class="relative">
               <span class="absolute top-4 left-4 bg-teal text-white font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">ANIMALS</span>
-              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-3 py-2 rounded-lg z-10 text-sm shadow-lg">33% OFF</span>
+              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+                <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+                <span class="block text-sm">33% OFF</span>
+              </span>
               <div class="card-image">
                 <img 
                   src="images/animals-busy-busy-book/1.png" 
@@ -366,7 +477,10 @@
           <a href="products/shlokas-board-book.html" class="product-card" data-animate data-animate-delay="400">
             <div class="relative">
               <span class="absolute top-4 left-4 bg-saffron text-maroon font-ui text-xs font-semibold px-3 py-1 rounded-full z-10">SPIRITUAL</span>
-              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-3 py-2 rounded-lg z-10 text-sm shadow-lg">40% OFF</span>
+              <span class="absolute top-4 right-4 bg-red-500 text-white font-heading font-bold px-2 py-2 rounded-lg z-10 shadow-lg text-center leading-tight">
+                <span class="block font-ui font-semibold" style="font-size:0.6rem; letter-spacing:0.05em;">🚀 LAUNCH</span>
+                <span class="block text-sm">40% OFF</span>
+              </span>
               <div class="card-image">
                 <img 
                   src="images/shloka-and-mantra-book/1.png" 
@@ -533,7 +647,7 @@
     </div>
     <!-- Bottom bar -->
     <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-cream/10 text-center text-xs text-cream/40">
-      © 2026 Deethya Enterprises. All Rights Reserved. SanskaTots™ is a trademark of Deethya Enterprises.
+      © 2025 Deethya Enterprises. All Rights Reserved. SanskaTots™ is a trademark of Deethya Enterprises.
     </div>
   </footer>
 
