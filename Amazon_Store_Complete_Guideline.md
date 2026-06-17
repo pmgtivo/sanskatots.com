@@ -131,8 +131,8 @@ LEFT SIDE (50%):                    RIGHT SIDE (50%):
 │   for Curious        │           │                          │
 │   Minds"             │           │                          │
 │                      │           │                          │
-│  ★★★★★ Trusted by   │           │                          │
-│  10,000+ Parents     │           │                          │
+│  ★★★★★ Trusted by    │           │                          │
+│  Indian  Parents     │           │                          │
 │                      │           │                          │
 │  [Shop All Books →]  │           │                          │
 └──────────────────────┘           └──────────────────────────┘
@@ -206,7 +206,6 @@ LEFT SIDE (50%):                    RIGHT SIDE (50%):
 "In a world of screens, we put a book in your child's hand."
                     — SanskaTots™, Designed in India
 
-          ⭐⭐⭐⭐⭐  10,000+ Happy Parents
     ♻️ Reusable  |  🇮🇳 Made in India  |  🏫 School Ready  |  🧒 Age 1+
 ```
 
