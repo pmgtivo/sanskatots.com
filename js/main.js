@@ -142,17 +142,25 @@ function initImageGallery() {
   });
 }
 
-// --- Amazon CTA Click Tracking ---
+// --- Marketplace CTA Click Tracking (Amazon + Meesho) ---
 function initAmazonModal() {
-  // Track Amazon CTA clicks via GA4 without blocking navigation
+  // Track marketplace CTA clicks via GA4 without blocking navigation
   document.addEventListener('click', (e) => {
-    const ctaBtn = e.target.closest('[data-amazon-cta]');
-    if (!ctaBtn) return;
-    if (typeof gtag === 'function') {
+    const amazonBtn = e.target.closest('[data-amazon-cta]');
+    if (amazonBtn && typeof gtag === 'function') {
       gtag('event', 'amazon_click', {
-        product_name: ctaBtn.dataset.productName || 'unknown',
-        placement: ctaBtn.dataset.placement || 'unknown',
-        amazon_url: ctaBtn.href || ''
+        product_name: amazonBtn.dataset.productName || 'unknown',
+        placement: amazonBtn.dataset.placement || 'unknown',
+        amazon_url: amazonBtn.href || ''
+      });
+    }
+
+    const meeshoBtn = e.target.closest('[data-meesho-cta]');
+    if (meeshoBtn && typeof gtag === 'function') {
+      gtag('event', 'meesho_click', {
+        product_name: meeshoBtn.dataset.productName || 'unknown',
+        placement: meeshoBtn.dataset.placement || 'unknown',
+        meesho_url: meeshoBtn.href || ''
       });
     }
   });
