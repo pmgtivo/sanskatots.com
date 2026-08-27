@@ -126,9 +126,9 @@ h1, h2, h3, h4 {
   transform: scale(1.02);
 }
 
-/* Meesho Buy Button */
-.btn-meesho {
-  background-color: #F43397;
+/* Flipkart Buy Button */
+.btn-flipkart {
+  background-color: #2874F0;
   color: #ffffff;
   font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 700;
@@ -144,15 +144,15 @@ h1, h2, h3, h4 {
   font-size: 1.1rem;
 }
 
-.btn-meesho:hover {
-  background-color: #D81B7A;
-  box-shadow: 0 10px 25px -5px rgba(244, 51, 151, 0.5);
+.btn-flipkart:hover {
+  background-color: #1A5BBF;
+  box-shadow: 0 10px 25px -5px rgba(40, 116, 240, 0.5);
   transform: scale(1.02);
 }
 
-/* Meesho variant sized to match btn-primary (nav / banners) */
-.btn-meesho-sm {
-  background-color: #F43397;
+/* Flipkart variant sized to match btn-primary (nav / banners) */
+.btn-flipkart-sm {
+  background-color: #2874F0;
   color: #ffffff;
   font-family: 'Poppins', 'Inter', sans-serif;
   font-weight: 600;
@@ -167,9 +167,9 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 
-.btn-meesho-sm:hover {
-  background-color: #D81B7A;
-  box-shadow: 0 10px 25px -5px rgba(244, 51, 151, 0.5);
+.btn-flipkart-sm:hover {
+  background-color: #1A5BBF;
+  box-shadow: 0 10px 25px -5px rgba(40, 116, 240, 0.5);
   transform: scale(1.03);
 }
 

@@ -142,7 +142,7 @@ function initImageGallery() {
   });
 }
 
-// --- Marketplace CTA Click Tracking (Amazon + Meesho) ---
+// --- Marketplace CTA Click Tracking (Amazon + Flipkart) ---
 function initAmazonModal() {
   // Track marketplace CTA clicks via GA4 without blocking navigation
   document.addEventListener('click', (e) => {
@@ -155,12 +155,12 @@ function initAmazonModal() {
       });
     }
 
-    const meeshoBtn = e.target.closest('[data-meesho-cta]');
-    if (meeshoBtn && typeof gtag === 'function') {
-      gtag('event', 'meesho_click', {
-        product_name: meeshoBtn.dataset.productName || 'unknown',
-        placement: meeshoBtn.dataset.placement || 'unknown',
-        meesho_url: meeshoBtn.href || ''
+    const flipkartBtn = e.target.closest('[data-flipkart-cta]');
+    if (flipkartBtn && typeof gtag === 'function') {
+      gtag('event', 'flipkart_click', {
+        product_name: flipkartBtn.dataset.productName || 'unknown',
+        placement: flipkartBtn.dataset.placement || 'unknown',
+        flipkart_url: flipkartBtn.href || ''
       });
     }
   });
