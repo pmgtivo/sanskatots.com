@@ -153,6 +153,7 @@
                 <option value="animals">Animals</option>
                 <option value="tracing">Tracing & Writing</option>
                 <option value="spiritual">Spiritual</option>
+                <option value="mythology">Mythology</option>
               </select>
               <span class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/40">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
@@ -233,6 +234,7 @@
           <li><a href="products/animals-busy-book.html" class="hover:text-saffron transition-colors">Animals Busy Book</a></li>
           <li><a href="products/shlokas-board-book.html" class="hover:text-saffron transition-colors">Shlokas Board Book</a></li>
           <li><a href="products/bhagavad-gita-for-kids.html" class="hover:text-saffron transition-colors">Bhagavad Gita for Kids</a></li>
+          <li><a href="products/mythology-busy-book.html" class="hover:text-saffron transition-colors">Mythology Busy Book</a></li>
         </ul>
       </div>
       <div>
@@ -398,6 +400,24 @@
         amazonUrl: 'https://www.amazon.in/dp/8168580893?tag=sanskatots-21&utm_source=sanskatots-website&utm_medium=books-grid&utm_campaign=bhagavad-gita-for-kids',
         flipkartUrl: 'https://dl.flipkart.com/s/M8UWHjNNNN',
         sortOrder: 7
+      },
+      {
+        id: 'mythology-busy-book',
+        name: 'Mythology Busy Book',
+        fullName: 'SanskaTots™ Mythology Busy Book',
+        badge: 'NEW · MYTHOLOGY',
+        badgeClass: 'bg-saffron text-maroon',
+        image: 'images/mythology-busy-book/1.png',
+        price: 549,
+        originalPrice: 899,
+        discount: 39,
+        age: 2,
+        topics: ['mythology', 'spiritual'],
+        tags: ['10 Activities', '70+ Velcro Stickers', 'A4 Spiral Bound'],
+        url: 'products/mythology-busy-book.html',
+        amazonUrl: null,
+        flipkartUrl: 'https://dl.flipkart.com/s/5xy4cwuuuN',
+        sortOrder: 0
       }
     ];
 
@@ -447,7 +467,7 @@
                 <span class="font-ui font-bold text-2xl text-maroon">₹${book.price}</span>
                 <span class="text-sm text-charcoal/50 line-through">₹${book.originalPrice}</span>
               </div>
-              <p class="text-xs text-charcoal/50 font-ui pt-1">🛒 Available on Amazon &amp; Flipkart</p>
+              <p class="text-xs text-charcoal/50 font-ui pt-1">🛒 ${book.amazonUrl ? 'Available on Amazon &amp; Flipkart' : 'Available on Flipkart'}</p>
             </div>
           </a>
           <div class="px-6 pb-6 flex flex-col gap-2">
@@ -455,9 +475,9 @@
               View Details →
             </a>
             <div class="flex flex-col sm:flex-row gap-2">
-              <a href="${book.amazonUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 block text-center btn-amazon w-full justify-center" data-amazon-cta data-product-name="${book.name}" data-placement="books-grid">
+              ${book.amazonUrl ? `<a href="${book.amazonUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 block text-center btn-amazon w-full justify-center" data-amazon-cta data-product-name="${book.name}" data-placement="books-grid">
                 Buy on Amazon →
-              </a>
+              </a>` : ''}
               <a href="${book.flipkartUrl}" target="_blank" rel="noopener noreferrer" class="flex-1 block text-center btn-flipkart-sm w-full justify-center" data-flipkart-cta data-product-name="${book.name}" data-placement="books-grid">
                 Buy on Flipkart →
               </a>
@@ -543,7 +563,8 @@
           montessori: 'Montessori',
           animals: 'Animals',
           tracing: 'Tracing & Writing',
-          spiritual: 'Spiritual'
+          spiritual: 'Spiritual',
+          mythology: 'Mythology'
         };
         filters.push({ label: topicLabels[topic], type: 'topic' });
       }
