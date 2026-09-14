@@ -21,6 +21,29 @@ npx serve .
 
 Then open http://localhost:8000
 
+## Assets & CSS build
+
+Tailwind is **pre-built**, not loaded from the CDN. If you add or change any Tailwind
+class in the HTML/JS, regenerate the stylesheet:
+
+```bash
+# standalone CLI: https://github.com/tailwindlabs/tailwindcss/releases (no Node needed)
+tailwindcss -c tailwind.config.js -i css/tailwind.src.css -o css/tailwind.css --minify
+```
+
+Images are served as WebP. The `.png` files are the originals/masters; the served
+variants are generated with:
+
+```bash
+# full size (gallery + lightbox), 260px thumbnail, 600px card
+cwebp -q 80 -resize 1000 0 -m 6 -sharp_yuv in.png -o N.webp
+cwebp -q 78 -resize 260  0 -m 6            in.png -o N-thumb.webp
+cwebp -q 80 -resize 600  0 -m 6 -sharp_yuv 1.png  -o 1-card.webp
+```
+
+Product videos use a click-to-load facade (`.yt-facade`) with a local poster in
+`images/video-thumbs/`, so the YouTube player is only fetched when a visitor hits play.
+
 ## Structure
 
 ```

@@ -8,7 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initImageGallery();
   initAmazonModal();
+  initVideoFacades();
 });
+
+// --- Click-to-load YouTube (keeps ~1MB of player code off first load) ---
+function initVideoFacades() {
+  document.querySelectorAll('[data-yt-id]').forEach(facade => {
+    facade.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.className = 'absolute top-0 left-0 w-full h-full';
+      iframe.src = `https://www.youtube-nocookie.com/embed/${facade.dataset.ytId}?rel=0&autoplay=1`;
+      iframe.title = facade.dataset.ytTitle || 'SanskaTots video';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      facade.replaceWith(iframe);
+    }, { once: true });
+  });
+}
 
 // --- Sticky Nav on Scroll ---
 function initNavScroll() {

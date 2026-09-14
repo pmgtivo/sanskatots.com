@@ -18,28 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
-            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
-            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
-            cream: '#FFF8EC',
-            'off-white': '#FAF6F0',
-            charcoal: '#2A2A2A',
-          },
-          fontFamily: {
-            heading: ['Playfair Display', 'Georgia', 'serif'],
-            body: ['Inter', 'system-ui', 'sans-serif'],
-            ui: ['Poppins', 'Inter', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind CSS — prebuilt & minified (see tailwind.config.js) -->
+  <link rel="stylesheet" href="css/tailwind.css" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -51,7 +31,7 @@
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-2">
-        <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
+        <img src="images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
         <span class="font-heading text-xl font-bold text-maroon hidden sm:inline">SanskaTots™</span>
       </a>
       <div class="hidden md:flex items-center gap-6">
@@ -71,7 +51,7 @@
   <div id="mobile-nav-overlay" class="mobile-nav-overlay flex flex-col items-center justify-center gap-8">
     <button id="mobile-nav-close" class="absolute top-6 right-6 text-cream text-3xl" aria-label="Close navigation">✕</button>
     <a href="index.html" class="flex flex-col items-center gap-3">
-      <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
+      <img src="images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
       <span class="text-cream font-heading text-2xl font-bold">SanskaTots™</span>
     </a>
     <a href="books.html" class="text-cream font-ui text-xl">Books</a>
@@ -170,7 +150,7 @@
   <footer class="bg-maroon text-cream py-16 px-4 md:px-8">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <div>
-        <img src="images/SanskaTots-logo.png" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
+        <img src="images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
         <h3 class="font-heading text-2xl font-bold text-cream mb-2">SanskaTots™</h3>
         <p class="text-cream/60 text-sm leading-relaxed">Screen-free school readiness, the Indian way.</p>
         <div class="mt-3 pill-badge bg-transparent border-cream/30 text-cream/80 text-xs">🇮🇳 Made in India</div>

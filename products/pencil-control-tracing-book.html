@@ -11,7 +11,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="SanskaTots Pencil Control Tracing Book — Write & Wipe Reusable" />
   <meta property="og:description" content="India's most complete reusable tracing book. 300 GSM laminated. Alphabets, Numbers, Shapes, Patterns. FREE pen & duster. Age 2+." />
-  <meta property="og:image" content="https://www.sanskatots.com/images/pencil-control-tracing-book/1.png" />
+  <meta property="og:image" content="https://www.sanskatots.com/images/pencil-control-tracing-book/1.webp" />
   <meta property="og:url" content="https://www.sanskatots.com/products/pencil-control-tracing-book.html" />
   <meta property="og:type" content="product" />
   <meta property="og:site_name" content="SanskaTots™" />
@@ -23,9 +23,9 @@
     "@type": "Product",
     "name": "SanskaTots Write & Wipe Pencil Control Tracing Book",
     "image": [
-      "https://www.sanskatots.com/images/pencil-control-tracing-book/1.png",
-      "https://www.sanskatots.com/images/pencil-control-tracing-book/2.png",
-      "https://www.sanskatots.com/images/pencil-control-tracing-book/3.png"
+      "https://www.sanskatots.com/images/pencil-control-tracing-book/1.webp",
+      "https://www.sanskatots.com/images/pencil-control-tracing-book/2.webp",
+      "https://www.sanskatots.com/images/pencil-control-tracing-book/3.webp"
     ],
     "description": "India's most complete reusable tracing workbook for children aged 2+. 300 GSM laminated pages. 5 learning concepts: Writing Patterns, Shapes, Drawing, Alphabets, Numbers. Includes FREE toddler-grip pen and soft duster.",
     "brand": {
@@ -97,31 +97,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
-            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
-            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
-            cream: '#FFF8EC',
-            'off-white': '#FAF6F0',
-            charcoal: '#2A2A2A',
-          },
-          fontFamily: {
-            heading: ['Playfair Display', 'Georgia', 'serif'],
-            body: ['Inter', 'system-ui', 'sans-serif'],
-            ui: ['Poppins', 'Inter', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind CSS — prebuilt & minified (see tailwind.config.js) -->
+  <link rel="stylesheet" href="../css/tailwind.css" />
 
   <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- LCP image -->
+  <link rel="preload" as="image" href="../images/pencil-control-tracing-book/1.webp" fetchpriority="high" />
 </head>
 <body class="font-body bg-cream">
 
@@ -132,7 +114,7 @@
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-2">
-        <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
+        <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
         <span class="font-heading text-xl font-bold text-maroon hidden sm:inline">SanskaTots™</span>
       </a>
       <div class="hidden md:flex items-center gap-8">
@@ -154,7 +136,7 @@
   <div id="mobile-nav-overlay" class="mobile-nav-overlay flex flex-col items-center justify-center gap-8">
     <button id="mobile-nav-close" class="absolute top-6 right-6 text-cream text-3xl" aria-label="Close navigation">✕</button>
     <a href="../index.html" class="flex flex-col items-center gap-3">
-      <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
+      <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
       <span class="text-cream font-heading text-2xl font-bold">SanskaTots™</span>
     </a>
     <a href="../books.html" class="text-cream font-ui text-xl">Books</a>
@@ -175,8 +157,10 @@
         <div data-gallery class="space-y-4">
           <!-- Main Image -->
           <div class="gallery-main relative aspect-square bg-white flex items-center justify-center p-4">
-            <img 
-              src="../images/pencil-control-tracing-book/1.png" 
+            <img
+              src="../images/pencil-control-tracing-book/1.webp"
+              fetchpriority="high"
+              decoding="async"
               alt="SanskaTots Pencil Control Tracing Book — complete product with pen and duster"
               class="max-w-full max-h-full object-contain transition-opacity duration-200"
               width="600"
@@ -193,32 +177,32 @@
           </div>
           <!-- Thumbnails -->
           <div class="grid grid-cols-6 gap-2">
-            <div class="gallery-thumb active aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/1.png" data-alt="Pencil Control Tracing Book product shot">
-              <img src="../images/pencil-control-tracing-book/1.png" alt="Product thumbnail" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb active aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/1.webp" data-alt="Pencil Control Tracing Book product shot">
+              <img src="../images/pencil-control-tracing-book/1-thumb.webp" alt="Product thumbnail" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/2.png" data-alt="Infinite practice cycle - write and wipe">
-              <img src="../images/pencil-control-tracing-book/2.png" alt="Write wipe cycle" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/2.webp" data-alt="Infinite practice cycle - write and wipe">
+              <img src="../images/pencil-control-tracing-book/2-thumb.webp" alt="Write wipe cycle" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/3.png" data-alt="What's inside - Lines, Patterns, Shapes tracing">
-              <img src="../images/pencil-control-tracing-book/3.png" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/3.webp" data-alt="What's inside - Lines, Patterns, Shapes tracing">
+              <img src="../images/pencil-control-tracing-book/3-thumb.webp" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/4.png" data-alt="What's inside - Lines, Patterns, Shapes tracing">
-              <img src="../images/pencil-control-tracing-book/4.png" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/4.webp" data-alt="What's inside - Lines, Patterns, Shapes tracing">
+              <img src="../images/pencil-control-tracing-book/4-thumb.webp" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/5.png" data-alt="Activities, Alphabet, Numbers tracing">
-              <img src="../images/pencil-control-tracing-book/5.png" alt="Activities inside" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/5.webp" data-alt="Activities, Alphabet, Numbers tracing">
+              <img src="../images/pencil-control-tracing-book/5-thumb.webp" alt="Activities inside" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/6.png" data-alt="Activities, Alphabet, Numbers tracing">
-              <img src="../images/pencil-control-tracing-book/6.png" alt="Activities inside" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/6.webp" data-alt="Activities, Alphabet, Numbers tracing">
+              <img src="../images/pencil-control-tracing-book/6-thumb.webp" alt="Activities inside" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/7.png" data-alt="6 skills developed in 1 book">
-              <img src="../images/pencil-control-tracing-book/7.png" alt="Skills developed" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/7.webp" data-alt="6 skills developed in 1 book">
+              <img src="../images/pencil-control-tracing-book/7-thumb.webp" alt="Skills developed" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/8.png" data-alt="6 skills developed in 1 book">
-              <img src="../images/pencil-control-tracing-book/8.png" alt="Skills developed" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/8.webp" data-alt="6 skills developed in 1 book">
+              <img src="../images/pencil-control-tracing-book/8-thumb.webp" alt="Skills developed" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/9.png" data-alt="Why choose SanskaTots - comparison chart">
-              <img src="../images/pencil-control-tracing-book/9.png" alt="Comparison chart" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/pencil-control-tracing-book/9.webp" data-alt="Why choose SanskaTots - comparison chart">
+              <img src="../images/pencil-control-tracing-book/9-thumb.webp" alt="Comparison chart" class="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
         </div>
@@ -329,7 +313,7 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img 
-            src="../images/pencil-control-tracing-book/3.png" 
+            src="../images/pencil-control-tracing-book/3.webp" 
             alt="What's inside - Lines Tracings, Patterns Tracings, Shapes Tracings for writing preparation and hand-eye coordination"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -337,7 +321,7 @@
             height="600"
           />
           <img 
-            src="../images/pencil-control-tracing-book/4.png" 
+            src="../images/pencil-control-tracing-book/4.webp" 
             alt="What's inside - Activities Tracings, Alphabet Tracings, Numbers Tracings for fine motor skills and letter recognition"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -384,14 +368,14 @@
         <p class="text-cream/70 mb-8 max-w-2xl mx-auto">Watch real children explore every page — and discover why this is India's most loved activity book for toddlers.</p>
         <!-- Responsive 16:9 YouTube embed -->
         <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%; height: 0;">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube-nocookie.com/embed/8lPp8Ebh94w?rel=0"
-            title="SanskaTots Pencil Control Tracing Book — Watch in Action"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+          <button
+            class="yt-facade"
+            data-yt-id="8lPp8Ebh94w"
+            data-yt-title="SanskaTots Pencil Control Tracing Book — Watch in Action"
+            aria-label="Play video: SanskaTots Pencil Control Tracing Book — Watch in Action"
+          >
+            <img src="../images/video-thumbs/8lPp8Ebh94w.webp" alt="" loading="lazy" decoding="async" width="854" height="480" />
+          </button>
         </div>
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -460,7 +444,7 @@
         </div>
         <div>
           <img 
-            src="../images/pencil-control-tracing-book/6.png" 
+            src="../images/pencil-control-tracing-book/6.webp" 
             alt="6 Skills, 1 Book, Infinite Repetition — Pencil Grip, Hand-Eye Coordination, Alphabet Recognition, Number Sense, Shape Awareness, Creative Confidence"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -476,7 +460,7 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="../images/pencil-control-tracing-book/5.png" 
+            src="../images/pencil-control-tracing-book/5.webp" 
             alt="Infinite practice cycle — child writing with pen on left side, wiping with duster on right side, repeat forever"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -544,7 +528,7 @@
         </div>
         <div class="order-1 lg:order-2">
           <img 
-            src="../images/pencil-control-tracing-book/2.png" 
+            src="../images/pencil-control-tracing-book/2.webp" 
             alt="Everything in the box — Premium tracing book (300 GSM), FREE toddler-grip pen, FREE soft duster"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -561,7 +545,7 @@
         <h2 class="font-heading text-2xl md:text-3xl font-bold text-center mb-10">Why Choose This Book?</h2>
         <div class="flex justify-center">
           <img 
-            src="../images/pencil-control-tracing-book/8.png" 
+            src="../images/pencil-control-tracing-book/8.webp" 
             alt="Comparison: Regular Tracing Books vs SanskaTots Write & Wipe — Last for YEARS, Infinite practice, Everything in the box, 300 GSM built to last, Water Resistant, Made in India"
             class="rounded-2xl shadow-lg max-w-full md:max-w-2xl"
             loading="lazy"
@@ -577,7 +561,7 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="../images/pencil-control-tracing-book/7.png" 
+            src="../images/pencil-control-tracing-book/7.webp" 
             alt="Book dimensions — Width 16.0 cm, Height 21.0 cm, A5 format"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -634,7 +618,7 @@
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="font-heading text-2xl md:text-3xl font-bold mb-8">The Gift That Keeps on Teaching</h2>
         <img 
-          src="../images/pencil-control-tracing-book/9.png" 
+          src="../images/pencil-control-tracing-book/9.webp" 
           alt="The gift that keeps on teaching — perfect for birthday gift, school admission gift, home learning starter, return gift alternative"
           class="rounded-2xl shadow-lg max-w-full md:max-w-2xl mx-auto"
           loading="lazy"
@@ -716,7 +700,7 @@
         <div class="max-w-sm mx-auto">
           <a href="montessori-busy-book.html" class="product-card">
             <div class="card-image">
-              <img src="../images/montessori-busy-book/1.png" alt="SanskaTots Montessori Busy Book" loading="lazy" width="400" height="300" />
+              <img src="../images/montessori-busy-book/1.webp" alt="SanskaTots Montessori Busy Book" loading="lazy" width="400" height="300" />
             </div>
             <div class="p-5 space-y-3">
               <h3 class="font-heading text-lg font-bold">Montessori Busy Book</h3>
@@ -771,7 +755,7 @@
   <footer class="bg-maroon text-cream py-16 px-4 md:px-8">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <div>
-        <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
+        <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
         <h3 class="font-heading text-2xl font-bold text-cream mb-2">SanskaTots™</h3>
         <p class="text-cream/60 text-sm leading-relaxed">Screen-free school readiness, the Indian way.</p>
         <div class="mt-3 pill-badge bg-transparent border-cream/30 text-cream/80 text-xs">🇮🇳 Made in India</div>

@@ -11,7 +11,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="SanskaTots All In One Busy Book — 24 Themes, 135+ Velcro Stickers" />
   <meta property="og:description" content="India's most complete school readiness activity book. 24 themes, 135+ Velcro stickers, Write-Wipe-Repeat. Age 1+." />
-  <meta property="og:image" content="https://www.sanskatots.com/images/all-in-one-busy-book/1.png" />
+  <meta property="og:image" content="https://www.sanskatots.com/images/all-in-one-busy-book/1.webp" />
   <meta property="og:url" content="https://www.sanskatots.com/products/all-in-one-busy-book.html" />
   <meta property="og:type" content="product" />
   <meta property="og:site_name" content="SanskaTots™" />
@@ -23,10 +23,10 @@
     "@type": "Product",
     "name": "SanskaTots All In One Busy Book",
     "image": [
-      "https://www.sanskatots.com/images/all-in-one-busy-book/1.png",
-      "https://www.sanskatots.com/images/all-in-one-busy-book/2.png",
-      "https://www.sanskatots.com/images/all-in-one-busy-book/3.png",
-      "https://www.sanskatots.com/images/all-in-one-busy-book/4.png"
+      "https://www.sanskatots.com/images/all-in-one-busy-book/1.webp",
+      "https://www.sanskatots.com/images/all-in-one-busy-book/2.webp",
+      "https://www.sanskatots.com/images/all-in-one-busy-book/3.webp",
+      "https://www.sanskatots.com/images/all-in-one-busy-book/4.webp"
     ],
     "description": "India's most complete school readiness activity book. 24 learning themes, 135+ Velcro stickers, Write-Wipe-Repeat technology. 300 GSM laminated pages. Includes FREE toddler-grip pen and soft duster.",
     "brand": {
@@ -90,31 +90,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            saffron: { DEFAULT: '#F4A340', light: '#FDE4B5', dark: '#D4892A' },
-            maroon: { DEFAULT: '#8C2A2A', light: '#C44C4C' },
-            teal: { DEFAULT: '#2BA8A0', light: '#A8E6E3' },
-            cream: '#FFF8EC',
-            'off-white': '#FAF6F0',
-            charcoal: '#2A2A2A',
-          },
-          fontFamily: {
-            heading: ['Playfair Display', 'Georgia', 'serif'],
-            body: ['Inter', 'system-ui', 'sans-serif'],
-            ui: ['Poppins', 'Inter', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind CSS — prebuilt & minified (see tailwind.config.js) -->
+  <link rel="stylesheet" href="../css/tailwind.css" />
 
   <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- LCP image -->
+  <link rel="preload" as="image" href="../images/all-in-one-busy-book/1.webp" fetchpriority="high" />
 </head>
 <body class="font-body bg-cream">
 
@@ -125,7 +107,7 @@
   <nav class="nav-sticky fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <a href="../index.html" class="flex items-center gap-2">
-        <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
+        <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-12 w-12 rounded-full" width="48" height="48" />
         <span class="font-heading text-xl font-bold text-maroon hidden sm:inline">SanskaTots™</span>
       </a>
       <div class="hidden md:flex items-center gap-8">
@@ -147,7 +129,7 @@
   <div id="mobile-nav-overlay" class="mobile-nav-overlay flex flex-col items-center justify-center gap-8">
     <button id="mobile-nav-close" class="absolute top-6 right-6 text-cream text-3xl" aria-label="Close navigation">✕</button>
     <a href="../index.html" class="flex flex-col items-center gap-3">
-      <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
+      <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-20 w-20 rounded-full" width="80" height="80" />
       <span class="text-cream font-heading text-2xl font-bold">SanskaTots™</span>
     </a>
     <a href="../books.html" class="text-cream font-ui text-xl">Books</a>
@@ -168,8 +150,10 @@
         <div data-gallery class="space-y-4">
           <!-- Main Image -->
           <div class="gallery-main relative aspect-square bg-white flex items-center justify-center p-4">
-            <img 
-              src="../images/all-in-one-busy-book/1.png" 
+            <img
+              src="../images/all-in-one-busy-book/1.webp"
+              fetchpriority="high"
+              decoding="async"
               alt="SanskaTots All In One Busy Book — complete product with pen and duster"
               class="max-w-full max-h-full object-contain transition-opacity duration-200"
               width="600"
@@ -186,32 +170,32 @@
           </div>
           <!-- Thumbnails -->
           <div class="grid grid-cols-6 gap-2">
-            <div class="gallery-thumb active aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/1.png" data-alt="All In One Busy Book product shot">
-              <img src="../images/all-in-one-busy-book/1.png" alt="Product thumbnail" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb active aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/1.webp" data-alt="All In One Busy Book product shot">
+              <img src="../images/all-in-one-busy-book/1-thumb.webp" alt="Product thumbnail" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/2.png" data-alt="24 learning themes overview">
-              <img src="../images/all-in-one-busy-book/2.png" alt="24 learning themes" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/2.webp" data-alt="24 learning themes overview">
+              <img src="../images/all-in-one-busy-book/2-thumb.webp" alt="24 learning themes" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/3.png" data-alt="135+ Velcro stickers">
-              <img src="../images/all-in-one-busy-book/3.png" alt="Velcro stickers" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/3.webp" data-alt="135+ Velcro stickers">
+              <img src="../images/all-in-one-busy-book/3-thumb.webp" alt="Velcro stickers" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/4.png" data-alt="Write-Wipe-Repeat feature">
-              <img src="../images/all-in-one-busy-book/4.png" alt="Write wipe repeat" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/4.webp" data-alt="Write-Wipe-Repeat feature">
+              <img src="../images/all-in-one-busy-book/4-thumb.webp" alt="Write wipe repeat" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/5.png" data-alt="What's in the box">
-              <img src="../images/all-in-one-busy-book/5.png" alt="What's in the box" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/5.webp" data-alt="What's in the box">
+              <img src="../images/all-in-one-busy-book/5-thumb.webp" alt="What's in the box" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/6.png" data-alt="Inside pages preview">
-              <img src="../images/all-in-one-busy-book/6.png" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/6.webp" data-alt="Inside pages preview">
+              <img src="../images/all-in-one-busy-book/6-thumb.webp" alt="Inside pages" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/7.png" data-alt="Quality comparison">
-              <img src="../images/all-in-one-busy-book/7.png" alt="Quality comparison" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/7.webp" data-alt="Quality comparison">
+              <img src="../images/all-in-one-busy-book/7-thumb.webp" alt="Quality comparison" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/8.png" data-alt="Gift positioning">
-              <img src="../images/all-in-one-busy-book/8.png" alt="Gift positioning" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/8.webp" data-alt="Gift positioning">
+              <img src="../images/all-in-one-busy-book/8-thumb.webp" alt="Gift positioning" class="w-full h-full object-contain" loading="lazy" />
             </div>
-            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/9.png" data-alt="Made in India">
-              <img src="../images/all-in-one-busy-book/9.png" alt="Made in India" class="w-full h-full object-contain" loading="lazy" />
+            <div class="gallery-thumb aspect-square bg-white p-1" data-src="../images/all-in-one-busy-book/9.webp" data-alt="Made in India">
+              <img src="../images/all-in-one-busy-book/9-thumb.webp" alt="Made in India" class="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
         </div>
@@ -434,14 +418,14 @@
         <p class="text-cream/70 mb-8 max-w-2xl mx-auto">Watch real children explore every page — and discover why this is India's most loved activity book for toddlers.</p>
         <!-- Responsive 16:9 YouTube embed -->
         <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%; height: 0;">
-          <iframe
-            class="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube-nocookie.com/embed/iMuTSUpa47U"
-            title="SanskaTots All In One Busy Book — Watch in Action"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+          <button
+            class="yt-facade"
+            data-yt-id="iMuTSUpa47U"
+            data-yt-title="SanskaTots All In One Busy Book — Watch in Action"
+            aria-label="Play video: SanskaTots All In One Busy Book — Watch in Action"
+          >
+            <img src="../images/video-thumbs/iMuTSUpa47U.webp" alt="" loading="lazy" decoding="async" width="854" height="480" />
+          </button>
         </div>
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -478,7 +462,7 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="../images/all-in-one-busy-book/2.png" 
+            src="../images/all-in-one-busy-book/2.webp" 
             alt="135+ Velcro stickers — hands-on Montessori learning with pick, match, and stick activities"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -546,7 +530,7 @@
         </div>
         <div class="order-1 lg:order-2">
           <img 
-            src="../images/all-in-one-busy-book/7.png" 
+            src="../images/all-in-one-busy-book/7.webp" 
             alt="Write-Wipe-Repeat — 300 GSM laminated pages for infinite practice"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -562,7 +546,7 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="../images/all-in-one-busy-book/3.png" 
+            src="../images/all-in-one-busy-book/3.webp" 
             alt="Everything in the box — Premium busy book, FREE toddler-grip pen, FREE soft duster"
             class="rounded-2xl shadow-lg w-full"
             loading="lazy"
@@ -605,7 +589,7 @@
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="font-heading text-2xl md:text-3xl font-bold mb-8">The Perfect Gift for Every Milestone</h2>
         <img 
-          src="../images/all-in-one-busy-book/9.png" 
+          src="../images/all-in-one-busy-book/9.webp" 
           alt="Perfect gift for birthdays, Diwali, baby showers, school admissions, and more"
           class="rounded-2xl shadow-lg max-w-full md:max-w-2xl mx-auto"
           loading="lazy"
@@ -741,7 +725,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
           <a href="montessori-busy-book.html" class="product-card">
             <div class="card-image">
-              <img src="../images/montessori-busy-book/1.png" alt="SanskaTots Montessori Busy Book" loading="lazy" width="400" height="300" />
+              <img src="../images/montessori-busy-book/1.webp" alt="SanskaTots Montessori Busy Book" loading="lazy" width="400" height="300" />
             </div>
             <div class="p-5 space-y-3">
               <h3 class="font-heading text-lg font-bold">Montessori Busy Book</h3>
@@ -754,7 +738,7 @@
           </a>
           <a href="pencil-control-tracing-book.html" class="product-card">
             <div class="card-image">
-              <img src="../images/pencil-control-tracing-book/1.png" alt="SanskaTots Pencil Control Tracing Book" loading="lazy" width="400" height="300" />
+              <img src="../images/pencil-control-tracing-book/1.webp" alt="SanskaTots Pencil Control Tracing Book" loading="lazy" width="400" height="300" />
             </div>
             <div class="p-5 space-y-3">
               <h3 class="font-heading text-lg font-bold">Pencil Control Tracing Book</h3>
@@ -809,7 +793,7 @@
   <footer class="bg-maroon text-cream py-16 px-4 md:px-8">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
       <div>
-        <img src="../images/SanskaTots-logo.png" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
+        <img src="../images/SanskaTots-logo.webp" alt="SanskaTots™" class="h-16 w-16 rounded-full mb-3" width="64" height="64" />
         <h3 class="font-heading text-2xl font-bold text-cream mb-2">SanskaTots™</h3>
         <p class="text-cream/60 text-sm leading-relaxed">Screen-free school readiness, the Indian way.</p>
         <div class="mt-3 pill-badge bg-transparent border-cream/30 text-cream/80 text-xs">🇮🇳 Made in India</div>
