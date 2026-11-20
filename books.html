@@ -133,6 +133,7 @@
                 <option value="tracing">Tracing & Writing</option>
                 <option value="spiritual">Spiritual</option>
                 <option value="mythology">Mythology</option>
+                <option value="geography">Geography</option>
               </select>
               <span class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-charcoal/40">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
@@ -209,6 +210,7 @@
           <li><a href="products/montessori-busy-book.html" class="hover:text-saffron transition-colors">Montessori Busy Book</a></li>
           <li><a href="products/pencil-control-tracing-book.html" class="hover:text-saffron transition-colors">Pencil Control Tracing Book</a></li>
           <li><a href="products/animals-busy-book.html" class="hover:text-saffron transition-colors">Animals Busy Book</a></li>
+          <li><a href="products/my-first-world-atlas-book.html" class="hover:text-saffron transition-colors">My First World Atlas Book</a></li>
           <li><a href="products/shlokas-board-book.html" class="hover:text-saffron transition-colors">Shlokas Board Book</a></li>
           <li><a href="products/bhagavad-gita-for-kids.html" class="hover:text-saffron transition-colors">Bhagavad Gita for Kids</a></li>
           <li><a href="products/mythology-busy-book.html" class="hover:text-saffron transition-colors">Mythology Busy Book</a></li>
@@ -252,6 +254,21 @@
   <script>
     // Book data
     const books = [
+      {
+        id: 'my-first-world-atlas-book',
+        name: 'My First World Atlas Book',
+        fullName: 'SanskaTots™ My First World Atlas Book',
+        badge: 'NEW · GEOGRAPHY',
+        badgeClass: 'bg-saffron text-maroon',
+        image: 'images/world-atlas-book/1-card.webp',
+        age: 2,
+        topics: ['geography'],
+        tags: ['120+ Countries', 'Flags & Maps', '300 GSM'],
+        url: 'products/my-first-world-atlas-book.html',
+        amazonUrl: 'https://www.amazon.in/dp/8168580885?tag=sanskatots-21&utm_source=sanskatots-website&utm_medium=books-grid&utm_campaign=my-first-world-atlas-book',
+        flipkartUrl: 'https://dl.flipkart.com/s/mAbxSxNNNN',
+        sortOrder: -1
+      },
       {
         id: 'all-in-one-busy-book',
         name: 'All In One Busy Book',
@@ -505,7 +522,8 @@
           animals: 'Animals',
           tracing: 'Tracing & Writing',
           spiritual: 'Spiritual',
-          mythology: 'Mythology'
+          mythology: 'Mythology',
+          geography: 'Geography'
         };
         filters.push({ label: topicLabels[topic], type: 'topic' });
       }
